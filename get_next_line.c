@@ -52,7 +52,6 @@ char *ft_read(int fd, char *stash)
             free(buff);
             return (NULL);
         }
-        buff[check] = '\0';
         stash = ft_strjoin(stash, buff);
     }
     free(buff);
