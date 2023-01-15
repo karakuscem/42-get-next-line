@@ -10,20 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char    *get_next_line(int fd)
 {
-    static char *stash;
+    static char *stash[256];
     char        *to_return;
 
     if (fd < 0 || BUFFER_SIZE <= 0)
         return (NULL);
-    stash = ft_read(fd, stash);
-    if (!stash)
+    stash[fd] = ft_read(fd, stash[fd]);
+    if (!stash[fd])
         return (NULL);
-    to_return = ft_get_line(stash);
-    stash = ft_new_stash(stash);
+    to_return = ft_get_line(stash[fd]);
+    stash[fd] = ft_new_stash(stash[fd]);
     return (to_return);
 }
 
