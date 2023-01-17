@@ -22,3 +22,6 @@ Bu repo 42İstanbul'un GNL projesi için kendi çözümlerimi içermektedir. Ki�
 
 -Buffers / Bufferlar
 
+## Result - Sonuç
+
+![GNL](https://github.com/karakuscem/42-get-next-line/blob/main/source/125.png)
