@@ -6,7 +6,7 @@
 /*   By: ckarakus <ckarakus@student.42istanbul.com> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 00:36:37 by ckarakus          #+#    #+#             */
-/*   Updated: 2023/01/16 19:02:48 by ckarakus         ###   ########.fr       */
+/*   Updated: 2023/01/17 09:30:18 by ckarakus         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,22 +64,13 @@ char	*ft_get_line(char *stash)
 	to_return = malloc(sizeof(char) * (i + 2));
 	if (!to_return)
 		return (NULL);
-	i = -1;
-	while (stash[++i] && stash[i] != '\n')
-		to_return[i] = stash[i];
-	if (stash[i] == '\n')
-	{
-		to_return[i] = '\n';
-		i++;
-	}
-	to_return[i] = '\0';
+	ft_strcpy(to_return, stash, i + 1);
 	return (to_return);
 }
 
 char	*ft_new_stash(char *stash)
 {
 	int		i;
-	int		j;
 	char	*to_return;
 
 	i = 0;
@@ -94,10 +85,7 @@ char	*ft_new_stash(char *stash)
 	if (!to_return)
 		return (NULL);
 	i++;
-	j = 0;
-	while (stash[i])
-		to_return[j++] = stash[i++];
-	to_return[j] = '\0';
+	ft_strcpy(to_return, stash + i, ft_strlen(stash + i));
 	free(stash);
 	return (to_return);
 }
