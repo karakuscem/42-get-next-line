@@ -24,4 +24,4 @@ Bu repo 42İstanbul'un GNL projesi için kendi çözümlerimi içermektedir. Ki�
 
 ## Result - Sonuç
 
-![GNL](https://github.com/karakuscem/42-get-next-line/blob/main/source/125.png)
+![GNL](https://github.com/karakuscem/42-get-next-line/blob/main/src/125.png)
