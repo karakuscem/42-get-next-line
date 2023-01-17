@@ -10,5 +10,15 @@ Bu repo 42İstanbul'un GNL projesi için kendi çözümlerimi içermektedir. Ki�
 
 -Static Variables / Statik Değişkenler
 
+-Memory Layout of C Programs / C Programlarının Hafıza Düzeni
+
+-How to Use Read, Open and Write Functions / Read, Open ve Write Fonksiyonlarının Kullanımı
+
+-How to Learn Hard and Soft Limit of File Descriptors / File Descriptor'ların Hard ve Soft Limitlerinin Nasıl Öğrenileceği
+
+-What is Leak and How to Prevent It / Leak Nedir ve Nasıl Önlenir
+
+-How to Find Leaks / Leak'ler nasıl Bulunur
+
 -Buffers / Bufferlar
 
